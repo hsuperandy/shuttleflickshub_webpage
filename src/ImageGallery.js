@@ -68,22 +68,22 @@ const ImageGallery = () => {
               <button type="submit">Search</button>
             </form>
           </div>
-          <div class="row">
-            {images.length > 0 ? (
-            <div style={{ display: "flex", flexWrap: "wrap" }}>
-              {images.map((image) => (
-                <div key={image.id} style={{ margin: "10px" }}>
-                  <img
-                    src={image.urls.small}
-                    alt={image.alt_description}
-                    style={{ width: "auto", height: "auto", borderRadius: "8px" }}
-                  />
-                </div>
-              ))}
-            </div>
-          ) : (
-            <p>No images found</p>
-          )}
+            <div class="row">
+              {images.length > 0 ? (
+              <div style={{ display: "flex", flexWrap: "wrap" }}>
+                {images.map((image) => (
+                  <div key={image.id} style={{ margin: "10px" }}>
+                    <img
+                      src={image.urls.small}
+                      alt={image.alt_description}
+                      style={{ width: "250px", height: "250px", borderRadius: "8px"}}
+                    />
+                  </div>
+                ))}
+              </div>
+            ) : (
+              <p>No images found</p>
+            )}
           </div>
         </div>
       </div>
