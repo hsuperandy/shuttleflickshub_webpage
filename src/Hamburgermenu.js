@@ -22,7 +22,7 @@ const Hamburgermenu = () => {
         <div className="container">
           <div className="site-navigation">
             <a href="index.html" className="logo m-0">
-              Shuttleflicks Photography<span className="text-primary">.</span>
+              Shuttleflicks Hub<span className="text-primary">.</span>
             </a>
 
             <ul className="js-clone-nav d-none d-lg-inline-none site-menu float-right site-nav-wrap">

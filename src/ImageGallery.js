@@ -7,7 +7,7 @@ const API_URL = "https://api.unsplash.com/search/photos";
 
 const ImageGallery = () => {
   const [images, setImages] = useState([]);
-  const [query, setQuery] = useState("nature"); // Default query
+  const [query, setQuery] = useState("wedding"); // Default query
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
@@ -48,7 +48,7 @@ const ImageGallery = () => {
         <div class="container">
           <div class="row mb-4">
             <div class="col-lg-7 text-center mx-auto">
-              <h2 class="section-heading gsap-reveal-hero mb-0">
+              <h2 class="section-heading gsap-reveal-hero margin-bottom-50">
                 <strong>Featured Photography</strong>
               </h2>
               <p class="gsap-reveal-hero">
@@ -62,13 +62,14 @@ const ImageGallery = () => {
               </div>
             </div>
           </div>
-          <div class="row">
-            <form onSubmit={handleSearch}>
-              <input type="text" name="search" placeholder="Search for images..." />
-              <button type="submit">Search</button>
-            </form>
-          </div>
+          <div className="container">
             <div class="row">
+              <form onSubmit={handleSearch}>
+                <input type="text" name="search" placeholder="Search for photography..." />
+                <button type="submit">Search</button>
+              </form>
+            </div>
+            <div class="gsap-reveal-hero">
               {images.length > 0 ? (
               <div style={{ display: "flex", flexWrap: "wrap" }}>
                 {images.map((image) => (
@@ -84,6 +85,7 @@ const ImageGallery = () => {
             ) : (
               <p>No images found</p>
             )}
+          </div>
           </div>
         </div>
       </div>

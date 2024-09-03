@@ -13,7 +13,7 @@ const MainPage = () => {
                 </strong>
               </h1>
               <h2 className="subheading gsap-reveal-hero mb-4">
-              Finding the best photographers that suits your needs. Whether you need it for event, portrait, wedding, products 
+              Finding the best photographers that suits your needs. Whether you need it for an event, portrait, wedding, products 
               or just purely exquisite photography, we have what you need! <strong>shuttleflickshub.com</strong>. See
                 our{" "}
                 <a href="https://shuttleflickshub.com" target="_blank">
